@@ -233,6 +233,7 @@ if __name__ == '__main__':
     if not args.max_iters_def is None:
         config.purification.max_iter = args.max_iters_def
     print(f'using defense with {config.purification.max_iter} iters')
+    
     # custom because missing
     config.purification.rand_type = 'non-binary'
     
@@ -243,8 +244,7 @@ if __name__ == '__main__':
     if not args.data_path is None:
         assert os.path.exists(args.data_path)
     
-    x_test, y_test = load_dataset(args.dataset, args.n_ex, device=device,
-        data_dir=args.data_dir)
+    x_test, y_test = load_dataset(args.dataset, args.n_ex, device=device, data_dir=args.data_dir)
         
     if not args.indices is None:
         notes_run = f'_{args.indices}'
@@ -255,11 +255,10 @@ if __name__ == '__main__':
         x_test, y_test = x_test[ind_restr], y_test[ind_restr]
     
     # load models
-    ebm_path = f'{args.ebm_dir}/ncsnv2/exp/logs/cifar10/best_checkpoint_with_denoising.pth'
-    ebm_config_path = f'{args.ebm_dir}/ncsnv2/configs/cifar10.yml'
+    ebm_path = f'{args.ebm_dir}/exp/logs/cifar10/best_checkpoint_with_denoising.pth'
+    ebm_config_path = f'{args.ebm_dir}/configs/cifar10.yml'
     ebm = load_ebm(ebm_path, ebm_config_path, device)
     ebm.eval()
-    
     
     model = load_model(args.model,
                        model_dir=args.model_dir,
@@ -317,7 +316,7 @@ if __name__ == '__main__':
         else:
             runname = f'{args.attack} original points ({args.n_ex})'
             x_adv = x_test.clone()
-            
+    
     
     if False:
         # only to compute runtime of base model
@@ -342,8 +341,7 @@ if __name__ == '__main__':
     logger.log(f'bs eval={args.batch_size}')
     startt = time.time()
     for c in range(5):
-        acc = clean_acc_with_eot(adp_fn, x_adv, y_test, bs=args.batch_size,
-            eot_test=args.eot_def_iter, method='softmax')
+        acc = clean_acc_with_eot(adp_fn, x_adv, y_test, bs=args.batch_size, eot_test=args.eot_def_iter, method='softmax')
         if c == 0:
             str_imgs = other_utils.check_imgs(x_adv, x_test, norm=args.norm)
             logger.log(str_imgs)

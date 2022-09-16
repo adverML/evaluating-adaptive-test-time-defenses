@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-cd /home/someuser
+#cd /home/someuser
 
 # Run attack and defense in separate processes. This is required since adaptive
 # attacks seem to interfere with the gradients in the defense at test time.
@@ -13,3 +13,5 @@ python evaluate.py
 # However, there is no proper error handling so far, so model_server might not
 # terminate correctly if there is an error.
 # In any case, stopping the Docker container will kill everything.
+
+

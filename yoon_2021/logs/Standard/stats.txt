@@ -20,3 +20,13 @@ robust accuracy=86.7% (wc=50.2%)
 [adp] eot iter=10 maxiter=10 sigma=0.25 runs=5 robust accuracy=86.9% (0.44) single run time=761.103 s
 
 
+test_points apgd_1_1000_niter_10_loss_cw_nrestarts_1_init_None_sigma_0.25_maxiter_10_eotiter_200_0-45_best.pth
+bs eval=1000
+test_points apgd_1_1000_niter_10_loss_cw_nrestarts_1_init_None_sigma_0.25_maxiter_10_eotiter_200_0-45_best.pth
+bs eval=1000
+test_points apgd_1_1000_niter_10_loss_cw_nrestarts_1_init_None_sigma_0.25_maxiter_10_eotiter_200_0-45_best.pth
+bs eval=1000
+test_points apgd_1_1000_niter_10_loss_cw_nrestarts_1_init_None_sigma_0.25_maxiter_10_eotiter_200_0-45_best.pth
+bs eval=1000
+test_points apgd_1_1000_niter_10_loss_cw_nrestarts_1_init_None_sigma_0.25_maxiter_10_eotiter_200_0-45_best.pth
+bs eval=1000

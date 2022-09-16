@@ -161,8 +161,7 @@ def get_batch(x, y, bs, counter, device='cuda'):
     return x_curr, y_curr
 
 
-def clean_acc_with_eot(model, x_test, y_test, bs, eot_test=1, method='logits',
-    device='cuda', n_cls=10):
+def clean_acc_with_eot(model, x_test, y_test, bs, eot_test=1, method='logits', device='cuda', n_cls=10):
     """ it aggregates the output (logits or softmax) of multiple runs
     """
     with torch.no_grad():
@@ -174,6 +173,8 @@ def clean_acc_with_eot(model, x_test, y_test, bs, eot_test=1, method='logits',
                 output += F.softmax(output_curr, 1)
             elif method == 'logits':
                 output += output_curr.clone()
+        
+        #import pdb; pdb.set_trace()
         
         acc = output.max(1)[1] == y_test.to(device)
     

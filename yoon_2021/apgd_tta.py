@@ -96,7 +96,8 @@ def apgd_train(model, x, y, norm='Linf', eps=8. / 255., n_iter=100,
     else:
         assert not y_target is None
         criterion_indiv = partial(criterion_dict[loss], y_target=y_target)
-    
+        
+    import functools
     # set params
     n_fts = math.prod(x.shape[1:])
     if norm in ['Linf', 'L2']:
