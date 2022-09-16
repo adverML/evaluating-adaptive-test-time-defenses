@@ -1,0 +1,56 @@
+iteration: 0 - best loss: -331.081970 curr loss -331.081970 - robust accuracy: 37.78% - step size: 0.06275
+iteration: 1 - best loss: 94.999870 curr loss 94.999870 - robust accuracy: 31.11% - step size: 0.06275
+iteration: 2 - best loss: 132.816467 curr loss 132.470352 - robust accuracy: 26.67% - step size: 0.05159
+iteration: 3 - best loss: 168.862030 curr loss 166.532150 - robust accuracy: 26.67% - step size: 0.04810
+iteration: 4 - best loss: 184.002289 curr loss 177.726120 - robust accuracy: 26.67% - step size: 0.04218
+iteration: 5 - best loss: 193.429657 curr loss 184.370636 - robust accuracy: 26.67% - step size: 0.03259
+iteration: 6 - best loss: 200.776825 curr loss 189.537201 - robust accuracy: 26.67% - step size: 0.02623
+iteration: 7 - best loss: 203.880798 curr loss 187.903366 - robust accuracy: 26.67% - step size: 0.01943
+iteration: 8 - best loss: 208.461014 curr loss 188.084778 - robust accuracy: 26.67% - step size: 0.01416
+iteration: 9 - best loss: 210.713715 curr loss 191.236664 - robust accuracy: 26.67% - step size: 0.00998
+apgd_1_1000_niter_10_loss_cw_nrestarts_1_init_None_sigma_0.25_maxiter_10_eotiter_200_0-45
+bs eval=45
+max Linf pert: 0.03137, nan in imgs: 0, max in imgs: 1.00000, min in imgs: 0.00000
+robust accuracy=42.2%
+robust accuracy=37.8%
+robust accuracy=40.0%
+robust accuracy=44.4%
+robust accuracy=37.8%
+[adp] eot iter=10 maxiter=10 sigma=0.25 runs=5 robust accuracy=40.4% (2.59) single run time=28.717 s
+
+
+iteration: 0 - best loss: -338.204590 curr loss -338.204590 - robust accuracy: 37.78% - step size: 0.06275
+iteration: 1 - best loss: 94.803680 curr loss 94.803680 - robust accuracy: 28.89% - step size: 0.06275
+iteration: 2 - best loss: 135.343216 curr loss 135.236923 - robust accuracy: 28.89% - step size: 0.05159
+iteration: 3 - best loss: 167.194916 curr loss 165.437073 - robust accuracy: 28.89% - step size: 0.04776
+iteration: 4 - best loss: 184.127365 curr loss 179.587372 - robust accuracy: 26.67% - step size: 0.04026
+iteration: 5 - best loss: 195.417816 curr loss 187.551239 - robust accuracy: 26.67% - step size: 0.03172
+iteration: 6 - best loss: 199.151825 curr loss 188.181427 - robust accuracy: 26.67% - step size: 0.02327
+iteration: 7 - best loss: 202.877899 curr loss 188.494080 - robust accuracy: 26.67% - step size: 0.01682
+iteration: 8 - best loss: 204.992844 curr loss 187.372589 - robust accuracy: 26.67% - step size: 0.01150
+iteration: 9 - best loss: 206.851227 curr loss 187.494995 - robust accuracy: 26.67% - step size: 0.00804
+apgd_1_1000_niter_10_loss_cw_nrestarts_1_init_None_sigma_0.25_maxiter_10_eotiter_200_0-45
+bs eval=45
+max Linf pert: 0.03137, nan in imgs: 0, max in imgs: 1.00000, min in imgs: 0.00000
+robust accuracy=48.9%
+robust accuracy=48.9%
+robust accuracy=51.1%
+robust accuracy=51.1%
+robust accuracy=48.9%
+[adp] eot iter=10 maxiter=10 sigma=0.25 runs=5 robust accuracy=49.8% (1.09) single run time=28.706 s
+
+
+iteration: 0 - best loss: -336.103821 curr loss -336.103821 - robust accuracy: 37.78% - step size: 0.06275
+iteration: 1 - best loss: 95.056541 curr loss 95.056541 - robust accuracy: 31.11% - step size: 0.06275
+iteration: 2 - best loss: 136.477005 curr loss 135.001831 - robust accuracy: 28.89% - step size: 0.04810
+iteration: 3 - best loss: 162.542282 curr loss 159.511124 - robust accuracy: 26.67% - step size: 0.04392
+iteration: 4 - best loss: 179.154724 curr loss 172.967804 - robust accuracy: 26.67% - step size: 0.03643
+iteration: 5 - best loss: 186.198578 curr loss 175.150970 - robust accuracy: 26.67% - step size: 0.02867
+iteration: 6 - best loss: 193.330231 curr loss 182.628296 - robust accuracy: 26.67% - step size: 0.02222
+iteration: 7 - best loss: 197.325394 curr loss 181.689697 - robust accuracy: 26.67% - step size: 0.01573
+iteration: 8 - best loss: 200.550537 curr loss 180.673889 - robust accuracy: 26.67% - step size: 0.01017
+iteration: 9 - best loss: 203.347046 curr loss 183.715881 - robust accuracy: 26.67% - step size: 0.00798
+apgd_1_1000_niter_10_loss_cw_nrestarts_1_init_None_sigma_0.25_maxiter_10_eotiter_200_0-45
+bs eval=1000
+max Linf pert: 0.03137, nan in imgs: 0, max in imgs: 1.00000, min in imgs: 0.00000
+robust accuracy=44.4%
